@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding-top: 20vh;
+}
+
+#donateBtn {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#donateBtn:hover {
+    transform: scale(1.1);
+}
+
+.spider {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url('textures/pixel_spider.png');
+    background-size: cover;
+    pointer-events: none;
+}
+
+#trailCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#explosionOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    pointer-events: none;
+    transition: background 0.5s;
+}
+
+.rocket {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: linear-gradient(45deg, #ff0000, #ff8800);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
